@@ -1,0 +1,937 @@
+/* Base Styles */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #333333;
+    --accent-color: #FF0000;
+    --text-light: #FFFFFF;
+    --text-dark: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.boxing-glove {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+.contact-header a {
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-header a:hover {
+    color: var(--accent-color);
+}
+
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-light);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+        url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 80px 20px 40px 20px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+            url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero%20Extended.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: var(--primary-color);
+        align-items: flex-end;
+        padding: 80px 20px 40px 20px;
+    }
+}
+
+.hero-content {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+        url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 80px 20px 40px 20px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+            url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero%20Extended.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: var(--primary-color);
+        align-items: flex-end;
+        padding: 80px 20px 40px 20px;
+    }
+}
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+        url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 80px 20px 40px 20px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+            url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero%20Extended.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: var(--primary-color);
+        align-items: flex-end;
+        padding: 80px 20px 40px 20px;
+    }
+}
+
+.hero-content {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+        url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 80px 20px 40px 20px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+            url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero%20Extended.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: var(--primary-color);
+        align-items: flex-end;
+        padding: 80px 20px 40px 20px;
+    }
+}
+}
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+        url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 80px 20px 40px 20px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+            url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero%20Extended.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: var(--primary-color);
+        align-items: flex-end;
+        padding: 80px 20px 40px 20px;
+    }
+}
+
+.hero-content {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+        url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 80px 20px 40px 20px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+            url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero%20Extended.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: var(--primary-color);
+        align-items: flex-end;
+        padding: 80px 20px 40px 20px;
+    }
+}
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+        url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 80px 20px 40px 20px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+            url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero%20Extended.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: var(--primary-color);
+        align-items: flex-end;
+        padding: 80px 20px 40px 20px;
+    }
+}
+
+.hero-content {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+        url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 80px 20px 40px 20px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.5) 100%),
+            url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero%20Extended.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: var(--primary-color);
+        align-items: flex-end;
+        padding: 80px 20px 40px 20px;
+    }
+}
+}
+
+}
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2:after {
+    display: none;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.achievement {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 4px;
+}
+
+.achievement .number {
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--accent-color);
+}
+
+.achievement .text {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    margin-bottom: 1rem;
+}
+
+/* Workshops Section */
+.workshops {
+    background-color: #fff;
+}
+
+.workshop-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.workshop-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 2.5rem;
+}
+
+.workshop-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.workshop-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.workshop-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.limited-availability {
+    display: inline-block;
+    background-color: var(--accent-color);
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2px;
+}
+
+.workshop-content p {
+    margin-bottom: 1.5rem;
+}
+
+.workshop-content ul {
+    margin-bottom: 2rem;
+}
+
+.workshop-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+.workshop-content ul li i {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: #f9f9f9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.testimonials h2:after {
+    background-color: var(--text-light);
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.quote:before, .quote:after {
+    content: '"';
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: var(--accent-color);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-right: 1rem;
+    width: 30px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo, .footer-links, .footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-links h4, .footer-social h4 {
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.footer-links h4:after, .footer-social h4:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0.5rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        order: 2;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-content, .contact-content {
+        flex-direction: column;
+    }
+
+    .achievement {
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 3rem 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .service-card, .workshop-content {
+        padding: 1.5rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+}
