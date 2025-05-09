@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Pete Ryan | Personal Trainer & Mindset Coach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>COACH PETE RYAN <span class="boxing-glove">🥊</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#workshops">WORKSHOPS</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <div class="contact-header">
+                <a href="tel:07308518428">07308 518 428</a>
+            </div>
+        </div>
+    </header>
+
+        <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>NO EXCUSES. NO EGO. JUST RESULTS.</h2>
+            <p>LEAVE YOUR EGO AT THE DOOR AND GIVE YOUR BEST EVERY DAY</p>
+            <a href="#contact" class="cta-button">START YOUR JOURNEY TODAY</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>ABOUT COACH PETE</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://raw.githubusercontent.com/coachpete86/images/main/A_black_and_white_photograph_with_overlaid_bold_wh.png" alt="Coach Pete Ryan">
+                </div>
+                <div class="about-text">
+                    <h3>18 YEARS OF EXPERIENCE</h3>
+                    <p>With over 30,000 hours of personal training under my belt, I've coached hundreds of people, from one-to-one sessions to group classes.</p>
+
+                    <h3>ELITE COACHING BACKGROUND</h3>
+                    <p>I previously managed a branch of London Shootfighters - one of the top MMA gyms in the world - where I became the pad man to several current and past world champions.</p>
+
+                    <h3>CHAMPIONSHIP PEDIGREE</h3>
+                    <p>As a former British full contact kickboxing champion (2x), I bring elite-level experience to every session.</p>
+
+                    <h3>ENDURANCE ATHLETE</h3>
+                    <p>I've completed 5 ultra-marathon multi-day, multi-stage, self-sufficient 160-mile runs through extreme environments including the Amazon, Namibia, and Kenya.</p>
+
+                    <div class="achievements">
+                        <div class="achievement">
+                            <span class="number">18+</span>
+                            <span class="text">YEARS EXPERIENCE</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="number">30,000+</span>
+                            <span class="text">TRAINING HOURS</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="number">2X</span>
+                            <span class="text">BRITISH CHAMPION</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="number">5</span>
+                            <span class="text">ULTRA MARATHONS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>PERSONAL TRAINING</h3>
+                    <p>Tailored one-to-one sessions designed to help you reach your specific fitness goals, whether that's weight loss, muscle gain, or improved performance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>GROUP CLASSES</h3>
+                    <p>High-energy group sessions that combine strength, conditioning, and technical work in a motivating team environment.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3>BOXING & PAD WORK</h3>
+                    <p>Learn proper technique and build explosive power with boxing and pad work sessions led by a 2x British kickboxing champion.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>MINDSET COACHING</h3>
+                    <p>Develop the mental toughness and resilience needed to overcome obstacles and achieve your goals both in and out of the gym.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    https://raw.githubusercontent.com/coachpete86/images/main/1CBAD4F8-B307-4070-A1A7-9F411931005C_1_105_c.jpeg
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>GALLERY</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/coachpete86/images/main/0B0E2B72-6E96-4A75-ABA3-1A57C5FBFADD_1_105_c.jpeg" alt="Coach Pete Training">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/coachpete86/images/main/1CBAD4F8-B307-4070-A1A7-9F411931005C_1_105_c.jpeg" alt="Coach Pete Training">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/coachpete86/images/main/21C515E2-AADE-4703-9A87-BF33CDCD6A12_1_105_c.jpeg" alt="Coach Pete Training">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/coachpete86/images/main/A_black_and_white_photograph_showcases_a_barbell_w.png" alt="Coach Pete Training">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/coachpete86/images/main/BtU-Jungle-Stage-2-Mikkel-Beisner-235-of-246-1280x720.jpg" alt="Ultra Marathon">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/coachpete86/images/main/A_black_and_white_photograph_depicts_an_industrial.png" alt="Coach Pete Training">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>TESTIMONIALS</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="quote">"Coach Pete transformed not just my fitness but my entire approach to life. His combination of technical expertise and mindset coaching is unmatched."</div>
+                    <div class="client-name">- James W.</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The boxing pad workshops are incredible. Pete's attention to detail and ability to break down complex techniques makes learning both effective and enjoyable."</div>
+                    <div class="client-name">- Sarah T.</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"As a professional fighter, I've worked with many coaches, but Pete's pad work and technical knowledge are world-class. He's helped take my game to the next level."</div>
+                    <div class="client-name">- Mike D., Professional MMA Fighter</div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>GET IN TOUCH</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>07308 518 428</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="49392c3d2c092a26282a21392c3d2c3b302827672a2624">[email&#160;protected]</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Thorpe, TW20 8QA, UK</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Coachpeteryan" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/Coachpeteryan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/coachedbypete" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>I'm interested in...</option>
+                                <option value="personal-training">Personal Training</option>
+                                <option value="group-classes">Group Classes</option>
+                                <option value="boxing-pad-work">Boxing & Pad Work</option>
+                                <option value="mindset-coaching">Mindset Coaching</option>
+                                <option value="workshops">Workshops</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>COACH PETE RYAN <span class="boxing-glove">🥊</span></h3>
+                    <p>Transform your body, mind & life</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#workshops">Workshops</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Coachpeteryan" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/Coachpeteryan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/coachedbypete" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Coach Pete Ryan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
