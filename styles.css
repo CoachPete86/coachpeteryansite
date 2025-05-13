@@ -1,131 +1,35 @@
-/* Reset + Base Styles */
+/* --- styles.css --- */
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #333333;
+    --accent-color: #FF0000;
+    --text-light: #FFFFFF;
+    --text-dark: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background: #f5f5f5;
-    color: #333;
-}
-
-h1, h2, h3 {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: var(--text-dark);
+    background-color: #f5f5f5;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-header {
-    background: #000;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-nav ul li a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #e63946;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/coachpete86/images/main/Coach%20Pete%20Hero%20Extended.png') center/cover no-repeat;
-    text-align: center;
-    color: #fff;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #e63946;
-    color: #fff;
-    padding: 10px 25px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #c92a38;
-}
-
-.services, .gallery, .contact {
-    background: #fff;
-    margin-top: 40px;
-    padding: 40px 0;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.service-card {
-    background: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #000;
-    color: #fff;
-    margin-top: 40px;
-}
-
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-}
+/* Additional styling to be included here as per the original canvas */
