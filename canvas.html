@@ -1,0 +1,32 @@
+<canvas id="blackRedPalette" width="400" height="200"></canvas>
+<script>
+const ctx1 = document.getElementById('blackRedPalette').getContext('2d');
+ctx1.fillStyle = '#000000'; // black
+ctx1.fillRect(0, 0, 133, 200);
+ctx1.fillStyle = '#FF0000'; // red
+ctx1.fillRect(133, 0, 133, 200);
+ctx1.fillStyle = '#FFFFFF'; // white
+ctx1.fillRect(266, 0, 134, 200);
+ctx1.font = "16px Arial";
+ctx1.fillStyle = '#FFFFFF';
+ctx1.fillText("Black", 20, 180);
+ctx1.fillText("Red", 150, 180);
+ctx1.fillStyle = '#000000';
+ctx1.fillText("White", 285, 180);
+</script>
+<canvas id="brandGuidePalette" width="400" height="200"></canvas>
+<script>
+const ctx2 = document.getElementById('brandGuidePalette').getContext('2d');
+ctx2.fillStyle = '#0057FF'; // Fight Blue
+ctx2.fillRect(0, 0, 133, 200);
+ctx2.fillStyle = '#FF6B00'; // Energise Orange
+ctx2.fillRect(133, 0, 133, 200);
+ctx2.fillStyle = '#FFFFFF'; // white
+ctx2.fillRect(266, 0, 134, 200);
+ctx2.font = "16px Arial";
+ctx2.fillStyle = '#FFFFFF';
+ctx2.fillText("Blue", 20, 180);
+ctx2.fillText("Orange", 145, 180);
+ctx2.fillStyle = '#000000';
+ctx2.fillText("White", 285, 180);
+</script>
